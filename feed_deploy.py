@@ -34,4 +34,4 @@ def fcc_youtube_search(query:str, max_results:int=3):
     return results or [{"message":"No videos found"}]
 
 if __name__ == "__main__":
-    mcp.run() #STDIO
+    mcp.run(transport="http") 
