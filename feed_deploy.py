@@ -20,7 +20,7 @@ def fcc_news_search(query:str, max_results:int=3):
     return results or [{"message":"No results found"}]
 
 @mcp.tool()
-def fcc_youtube_search(query:str, max_results:int=3):
+def ms_youtube_search(query:str, max_results:int=3):
     """Search Meta Sensing Youtube channnel via RSS by title"""
     feed = feedparser.parse("https://www.youtube.com/feeds/videos.xml?channel_id=UCSXbhujyE1nz1YNd9l92xhw")
     results = []
